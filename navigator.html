@@ -12,31 +12,65 @@
     <main class="container py-4 py-md-5">
         <h1 class="mb-3">Navigator</h1>
         <p class="text-body-secondary mb-4">Hier kannst du die statischen Ansichten öffnen. Innerhalb der Ansichten sind die Bedienelemente nur dargestellt. Das Layout passt sich an die Bildschirmgröße an.</p>
-        <div class="list-group">
-            <a class="list-group-item list-group-item-action p-3" href="index.html">
-                <h2 class="h5 mb-1">Tagesansicht</h2>
-                <p class="mb-0 text-body-secondary">Leerer Tag ohne Tätigkeiten.</p>
-            </a>
-            <a class="list-group-item list-group-item-action p-3" href="seiten/taetigkeit.html">
-                <h2 class="h5 mb-1">Neue Tätigkeit</h2>
-                <p class="mb-0 text-body-secondary">Statischer Formularentwurf.</p>
-            </a>
-            <a class="list-group-item list-group-item-action p-3" href="seiten/fehler-stunden.html">
-                <h2 class="h5 mb-1">Fehlerfall: Stunden</h2>
-                <p class="mb-0 text-body-secondary">Neun Stunden eingetragen – maximal acht Stunden am Tag.</p>
-            </a>
-            <a class="list-group-item list-group-item-action p-3" href="seiten/fehler-taetigkeit.html">
-                <h2 class="h5 mb-1">Fehlerfall: Tätigkeit</h2>
-                <p class="mb-0 text-body-secondary">Die Tätigkeitsbeschreibung fehlt.</p>
-            </a>
-            <a class="list-group-item list-group-item-action p-3" href="seiten/test.html">
-                <h2 class="h5 mb-1">Testansichten</h2>
-                <p class="mb-0 text-body-secondary">Beide Fehlerfälle und eine gefüllte Tätigkeitsliste.</p>
-            </a>
-            <a class="list-group-item list-group-item-action p-3" href="seiten/profil.html">
-                <h2 class="h5 mb-1">Azubi-Profil</h2>
-                <p class="mb-0 text-body-secondary">Vorbereitete Profilseite.</p>
-            </a>
+        <div class="row g-4">
+            <section class="col-12 col-lg-6" aria-labelledby="darkmode-titel">
+                <h2 class="h4 mb-3" id="darkmode-titel">Darkmode</h2>
+                <div class="list-group" data-bs-theme="dark">
+                    <a class="list-group-item list-group-item-action p-3" href="index.html">
+                        <h3 class="h5 mb-1">Tagesansicht</h3>
+                        <p class="mb-0 text-body-secondary">Leerer Tag ohne Tätigkeiten.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/taetigkeit.html">
+                        <h3 class="h5 mb-1">Neue Tätigkeit</h3>
+                        <p class="mb-0 text-body-secondary">Statischer Formularentwurf.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/fehler-stunden.html">
+                        <h3 class="h5 mb-1">Fehlerfall: Stunden</h3>
+                        <p class="mb-0 text-body-secondary">Neun Stunden eingetragen – maximal acht Stunden am Tag.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/fehler-taetigkeit.html">
+                        <h3 class="h5 mb-1">Fehlerfall: Tätigkeit</h3>
+                        <p class="mb-0 text-body-secondary">Die Tätigkeitsbeschreibung fehlt.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/tagesansicht.html">
+                        <h3 class="h5 mb-1">Tagesansicht mit Tätigkeiten</h3>
+                        <p class="mb-0 text-body-secondary">Gefüllter Tag mit zwei Tätigkeiten und insgesamt sieben Stunden.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/profil.html">
+                        <h3 class="h5 mb-1">Azubi-Profil</h3>
+                        <p class="mb-0 text-body-secondary">Vorbereitete Profilseite.</p>
+                    </a>
+                </div>
+            </section>
+            <section class="col-12 col-lg-6" aria-labelledby="lightmode-titel">
+                <h2 class="h4 mb-3" id="lightmode-titel">Lightmode</h2>
+                <div class="list-group" data-bs-theme="light">
+                    <a class="list-group-item list-group-item-action p-3" href="index-white.html">
+                        <h3 class="h5 mb-1">Tagesansicht</h3>
+                        <p class="mb-0 text-body-secondary">Leerer Tag ohne Tätigkeiten.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/white/taetigkeit.html">
+                        <h3 class="h5 mb-1">Neue Tätigkeit</h3>
+                        <p class="mb-0 text-body-secondary">Statischer Formularentwurf.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/white/fehler-stunden.html">
+                        <h3 class="h5 mb-1">Fehlerfall: Stunden</h3>
+                        <p class="mb-0 text-body-secondary">Neun Stunden eingetragen – maximal acht Stunden am Tag.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/white/fehler-taetigkeit.html">
+                        <h3 class="h5 mb-1">Fehlerfall: Tätigkeit</h3>
+                        <p class="mb-0 text-body-secondary">Die Tätigkeitsbeschreibung fehlt.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/white/tagesansicht.html">
+                        <h3 class="h5 mb-1">Tagesansicht mit Tätigkeiten</h3>
+                        <p class="mb-0 text-body-secondary">Gefüllter Tag mit zwei Tätigkeiten und insgesamt sieben Stunden.</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action p-3" href="seiten/white/profil.html">
+                        <h3 class="h5 mb-1">Azubi-Profil</h3>
+                        <p class="mb-0 text-body-secondary">Vorbereitete Profilseite.</p>
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 </body>
