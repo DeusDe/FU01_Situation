@@ -1,35 +1,26 @@
-.btn,
-.woche .nav-link {
-    min-height: 44px;
+/* Bootstrap gestaltet alle Komponenten; CSS ergänzt nur Größe und native Validierung. */
+.berichtsheft {
+    min-height: 100dvh;
 }
 
-/* Tagesleiste (mobil horizontal) */
-.woche .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+main {
+    min-width: 0;
 }
 
-/* Tätigkeiten als abgerundete Karten */
-.eintrag {
-    border: 1px solid var(--bs-border-color);
-    border-radius: 0.75rem;
-    padding: 0.5rem 1rem;
+.leerzustand {
+    min-height: 16rem;
 }
 
-.eintrag-text {
-    overflow-wrap: anywhere;
+/* Fehler erst nach der Benutzung bzw. einem Speicherversuch anzeigen. */
+.form-control:user-invalid {
+    border-color: var(--bs-form-invalid-border-color);
+    background-color: rgba(var(--bs-danger-rgb), 0.1);
 }
 
-.form-control.rounded-4 {
-    border-radius: 1rem;
+.form-control:user-invalid:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
 }
 
-/* Ab Tablet: Wochenleiste wird zur Sidebar */
-@media (min-width: 768px) {
-    .woche {
-        border-right: 1px solid var(--bs-border-color);
-        min-height: calc(100vh - 3.5rem);
-    }
+.form-control:user-invalid ~ .invalid-feedback {
+    display: block;
 }
