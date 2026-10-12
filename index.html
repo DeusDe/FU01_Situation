@@ -10,32 +10,43 @@
 </head>
 <body data-bs-theme="dark" class="bg-body-tertiary">
     <div class="berichtsheft min-vh-100 d-flex flex-column">
+
+        <!--Navbar der Desktop ansicht-->
         <nav class="navbar bg-body border-bottom" aria-label="Hauptnavigation">
             <div class="container-fluid px-3 px-md-4 justify-content-center justify-content-md-between">
-                <a class="navbar-brand fw-semibold m-0" href="index.html">Berichtsheft</a>
-                <a class="nav-link text-body-secondary py-2 d-none d-md-block" href="seiten/profil.html">Azubi-Profil</a>
+                <span class="navbar-brand fw-semibold m-0">Berichtsheft</span>
+                <img src="assets/image.png" alt="Georg-Simon-Ohm Berufskolleg" class="navbar-logo position-absolute top-50 start-50 translate-middle d-none d-md-block px-2 py-1">
+                <span class="nav-link text-body-secondary py-2 d-none d-md-block">Profil</span>
             </div>
         </nav>
-        <!-- Auf dem Handy ersetzt die Tagesnavigation die seitliche Wochenliste. -->
-        <nav class="d-flex d-md-none align-items-center justify-content-between bg-body border-bottom px-2 py-2" aria-label="Tag wechseln">
-            <a class="btn btn-outline-secondary border-0" href="seiten/tage/freitag-leer.html" aria-label="Vorheriger Arbeitstag">&lsaquo;</a>
+
+        <!-- Navbar für das Handy -->
+        <nav class="d-flex d-md-none align-items-center justify-content-between bg-body border-bottom px-2 py-2" aria-label="Statische Tagesübersicht">
+            <button type="button" class="btn btn-outline-secondary border-0" aria-label="Vorheriger Arbeitstag">&lsaquo;</button>
             <span class="fw-semibold">Mo. 05.10.2026</span>
-            <a class="btn btn-outline-secondary border-0" href="seiten/tage/dienstag-leer.html" aria-label="Nächster Arbeitstag">&rsaquo;</a>
+            <button type="button" class="btn btn-outline-secondary border-0" aria-label="Nächster Arbeitstag">&rsaquo;</button>
         </nav>
+
+
+        <!--Hauptcontainer der Website-->
         <div class="container-fluid p-2 p-md-4 d-flex flex-column flex-grow-1">
             <div class="row g-3 flex-grow-1">
                 <aside class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block">
+
                     <section class="card" aria-labelledby="woche-titel">
                         <div class="card-header">
                             <h2 id="woche-titel" class="h6 mb-1">Woche</h2>
                             <span class="small text-body-secondary">5.–9. Oktober 2026</span>
-                        </div>                        <nav class="list-group list-group-flush" aria-label="Wochentage">
-                        <a class="list-group-item list-group-item-action active" href="index.html" aria-current="page">Mo. 05.10.2026</a>
-                        <a class="list-group-item list-group-item-action" href="seiten/tage/dienstag-leer.html">Di. 06.10.2026</a>
-                        <a class="list-group-item list-group-item-action" href="seiten/tage/mittwoch-leer.html">Mi. 07.10.2026</a>
-                        <a class="list-group-item list-group-item-action" href="seiten/tage/donnerstag-leer.html">Do. 08.10.2026</a>
-                        <a class="list-group-item list-group-item-action" href="seiten/tage/freitag-leer.html">Fr. 09.10.2026</a>
+                        </div>
+
+                        <nav class="list-group list-group-flush wochentage" aria-label="Wochentage">
+                        <span class="list-group-item list-group-item-action active" aria-current="date">Mo. 05.10.2026</span>
+                        <span class="list-group-item list-group-item-action">Di. 06.10.2026</span>
+                        <span class="list-group-item list-group-item-action">Mi. 07.10.2026</span>
+                        <span class="list-group-item list-group-item-action">Do. 08.10.2026</span>
+                        <span class="list-group-item list-group-item-action">Fr. 09.10.2026</span>
                         </nav>
+
                     </section>
                 </aside>
                 <main class="col-12 col-md-8 col-lg-9 col-xl-10 d-flex">
@@ -51,13 +62,13 @@
                         <div class="leerzustand flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center py-4">
                             <h2 class="h5">Noch keine Tätigkeiten</h2>
                             <p class="text-body-secondary mb-4">Trage ein, was du heute gemacht hast!</p>
-                            <a class="btn btn-primary" href="seiten/taetigkeit.html">Tätigkeit hinzufügen</a>
+                            <button type="button" class="btn btn-primary">Tätigkeit hinzufügen</button>
                         </div>
                         </div>
                     </section>
                 </main>
             </div>
-            <a class="d-md-none text-center small text-body-secondary mt-3" href="seiten/profil.html">Azubi-Profil</a>
+            <span class="d-md-none text-center small text-body-secondary mt-3">Azubi-Profil</span>
         </div>
     </div>
 </body>
