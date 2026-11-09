@@ -57,9 +57,6 @@
                         </div>
 
                         <div class="card-body d-flex flex-column p-3 p-md-4">
-                            <!-- Fehler-Zustand: Maximal 8 Stunden am Tag erlaubt.
-                                 WEG 1 (hier verwendet): statische Bootstrap-Klasse .is-invalid — der Fehler ist im Mockup
-                                 fest gesetzt, damit der Zustand ohne JS sofort sichtbar ist. -->
                             <form class="formular-entwurf" action="#" method="post" novalidate>
                                 <div class="mb-3">
                                     <label class="form-label" for="stunden-fehler-taetigkeit">Tätigkeit</label>
@@ -75,9 +72,6 @@
                                             <span class="input-group-text" id="stunden-fehler-stunden-einheit">h</span>
                                             <div class="invalid-feedback" id="stunden-fehler-stunden-fehler">Gib 0,5 bis 8 Stunden ein. Maximal 8 Stunden am Tag.</div>
                                         </div>
-                                        <!-- WEG 2 (Alternative, reiner CSS-Weg über die Pseudoklasse :invalid):
-                                             Durch max="8" und value="9" ist das Feld bereits nativ :invalid.
-                                             Siehe auskommentierte Regel in ../css/index.css. -->
                                     </div>
                                 </div>
 
