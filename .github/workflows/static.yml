@@ -36,7 +36,8 @@ jobs:
       - name: Navigator als Startseite setzen
         run: |
           mv index.html index-dark.html
-          sed -i 's/href="index.html"/href="index-dark.html"/g' navigator.html
+          sed -i 's/href="index.html"/href="index-dark.html"/g' navigator.html index-dark.html
+          sed -i 's/href="\.\.\/index\.html"/href="..\/index-dark.html"/g' seiten/*.html
           cp navigator.html index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

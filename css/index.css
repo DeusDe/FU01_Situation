@@ -1,4 +1,11 @@
-/* Bootstrap gestaltet die Komponenten; CSS ergänzt nur die responsive Größe. */
+/* Bootstrap gestaltet die Komponenten; CSS ergänzt nur die responsive Größe und Barrierefreiheit. */
+
+/* Sichtbarer Tastatur-Fokus (Barrierefreiheit). */
+:focus-visible {
+    outline: 3px solid #1d4ed8;
+    outline-offset: 2px;
+}
+
 .berichtsheft {
     min-height: 100dvh;
 }
@@ -24,9 +31,12 @@ main {
     filter: invert(1) hue-rotate(180deg);
 }
 
-/* Bootstrap liefert den Hover-Hintergrund; die Liste bleibt ein statischer Entwurf. */
-.wochentage .list-group-item {
-    cursor: pointer;
+/* Seitenleiste bleibt auf größeren Bildschirmen beim Scrollen im Blick (Mobile-First). */
+@media (min-width: 768px) {
+    .woche-pane {
+        position: sticky;
+        top: 1rem;
+    }
 }
 
 .wochentage .list-group-item.active:hover {
