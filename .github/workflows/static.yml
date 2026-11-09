@@ -33,6 +33,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Navigator als Startseite setzen
+        run: |
+          mv index.html index-dark.html
+          sed -i 's/href="index.html"/href="index-dark.html"/g' navigator.html
+          cp navigator.html index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
